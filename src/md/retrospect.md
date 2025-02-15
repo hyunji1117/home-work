@@ -1,5 +1,5 @@
-![soft](https://capsule-render.vercel.app/api?type=soft&color=1D768F&text=⚫️%201,2주차%20회고%20⚫️&fontAlignY=45&fontSize=40&height=150&animation=twinkling&desc=멋쟁이%20사자처럼&descAlignY=70)
-![shark](https://capsule-render.vercel.app/api?type=shark&color=gradient&height=140)
+![soft](https://capsule-render.vercel.app/api?type=soft&color=1D768F&text=⚫️%201,2주차%20회고%20⚫️&fontAlignY=45&fontSize=40&height=100&animation=twinkling&desc=멋쟁이%20사자처럼&descAlignY=70)
+![shark](https://capsule-render.vercel.app/api?type=shark&color=gradient&height=100)
 
 # 1,2주차 학습 상태를 회고하며..
 
@@ -49,5 +49,5 @@ pie showData
 
 
 \
-![soft](https://capsule-render.vercel.app/api?type=soft&color=3BB6A1&height=100&animation=twinkling&desc=2025.%2002.%2015%20마지막%20수정&descAlign=70&fontColor=00&descSize=25)
+![soft](https://capsule-render.vercel.app/api?type=soft&color=3BB6A1&height=100&animation=twinkling&desc=2025.%2002.%2015%20마지막%20수정&descAlign=85&fontColor=00&descSize=15)
 

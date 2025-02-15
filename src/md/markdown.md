@@ -2,7 +2,7 @@
 
 ![header](https://capsule-render.vercel.app/api?type=venom&color=gradient&width=100%&height=200&section=header&text=Markdown%20-nl-Syntax&animation=fadeIn&fontSize=80&fontAlign=50&stroke=9775fa&fontColor=f3f0ff)
 
-[<img src="https://capsule-render.vercel.app/api?type=soft&color=gradient&text=마크업%20문법%20바로가기&fontSize=40&animation=twinkling&descAlignY=50"/>](#3-마크다운-사용법문법)
+[<img src="https://capsule-render.vercel.app/api?type=soft&color=gradient&text=마크업%20문법%20바로가기&fontSize=40&animation=twinkling&descAlignY=50&height=100"/>](#3-마크다운-사용법문법)
 
 # 😃 1. 마크다운(Markdown) 이란?
 마크다운은 규칙을 기반으로 일반 텍스트를 구조화 된 문서로 작성하기 위한 ***마크업 언어*** 이다. 
