@@ -38,33 +38,56 @@
         font-size: 1.5rem;
         font-weight: bold;
         color: #333;
-        margin-bottom: 0.5rem;
+        margin-bottom: .1rem;
       }
 
-      .bio {
+      .lioncamp-13 {
+        font-size: 1rem;
+        margin: .5rem 0;
+      }
+
+      .about-me {
         color: #666;
         line-height: 1.6;
         margin-bottom: 1.5rem;
       }
 
-      .homework-links {
+      .hw-wrap {
+        background-color: #f1dbfd;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+        padding: .5rem .5rem 1.5rem;
+        border-radius: 10px;
+
+        .homework-links {
         display: flex;
         justify-content: center;
-        gap: 1rem;
+        gap: 1.5rem;
         margin: 0;
         padding: 0;
         list-style: none;
+        }
+
+        li:nth-child(n+2) {
+          background-color: yellow;
+        }
+
+        .homework-links a {
+          color: #686868;
+        }
+
+        .homework-links a {
+          color: #555;
+          text-decoration: none;
+          transition: color 0.3s ease;
+        }
+
+        .homework-links a:hover {
+          color: #4f04ff;
+          font-weight: 700;
+        }
       }
 
-      .homework-links a {
-        color: #555;
-        text-decoration: none;
-        transition: color 0.3s ease;
-      }
-
-      .homework-links a:hover {
-        color: #007bff;
-      }
+      
     </style>
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap"
@@ -78,17 +101,45 @@
   <body>
     <div class="profile-card">
       <img
-        src="./src/assets/images/jiwon.jpeg"
+        src="/src/assets/images/evelyn-profile.jpeg"
         alt="프로필 이미지"
         class="profile-image"
       />
-      <h1 class="name">김현지</h1>
-      <p class="bio">멋쟁이 사자처럼 프론트엔드 부트캠프 13기 김현지 입니다.</p>
-      <p>과제 결과는 링크를 선택해주세요.</p>
-      <ul class="homework-links">
-        <li><a href="./src/md/markdown.md">마크다운 문법</a></li>
-        <li><a href="./src/md/retrospect.md">회고</a></li>
-      </ul>
+      <h1 class="name">김현지😃</h1>
+      <h2 class="lioncamp-13">Likelion-Bootcamp 13기</h2>
+      <p class="about-me">안녕하세요! UX 탐험가 김현지 입니다.</p>
+      <div class="hw-wrap">
+        <p>💜슬비쌤, 확인할 링크를 선택해주세요.</p>
+        <ul class="homework-links">
+          <li>
+            <a 
+              href="https://github.com/hyunji1117/home-work" 
+              title="이전 과제를 확인하려면 클릭하세요." 
+              target="_blank"
+              rel="noopener window.opener noreferrer">
+              이전 과제 확인
+            </a>
+          </li>
+          <li>
+            <a 
+              href="/src/avatars/avatars.html" 
+              title="아바타 과제를 보려면 클릭하세요." 
+              target="_blank"
+              rel="noopener window.opener noreferrer">
+              아바타 과제
+            </a>
+          </li>
+          <li>
+            <a 
+              href="/src/avatars/avatars.html" 
+              title="아바타 과제를 보려면 클릭하세요." 
+              target="_blank"
+              rel="noopener window.opener noreferrer">
+              회고
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>

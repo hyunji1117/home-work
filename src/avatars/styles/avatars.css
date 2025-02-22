@@ -1,1 +1,72 @@
-/* 여기에 스타일을 구현해 주세요 */
+@import "/src/common/modern-reset.css";
+
+/* common */
+.ally-hidden {
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+  width: 1px;
+  height: 1px;
+  /* 스크린 리더 가상 커서가 해당 박스에 초점이 머물도록 최소한의 박스 크기 유지 */
+  margin: -1px;
+  overflow: hidden;
+  /* 상자 크기를 넘어가는 영역 숨김 처리 */
+  white-space: nowrap;
+}
+
+/* header 
+아바타 별 상태 정보 (숨김 처리) */
+
+/* main */
+.avatars-wrap {
+  padding: 100px;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  width: 396px;
+  height: 195px;
+  justify-content: center;
+  margin: 110px auto;
+  gap: 20px;
+
+  li {
+    display: inline-block;
+    display: flex;
+    align-items: last baseline;
+
+    * {
+      display: inline-block;
+    }
+  }
+}
+
+
+
+li:nth-child(n+5) {
+  display: flex;
+  align-items: first baseline;
+}
+
+.avatar-status {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .status {
+    position: absolute;
+    top: 48px;
+    left: 48px;
+  }
+
+  img:first-child {
+    border-radius: 100%;
+  }
+}
+
+
+/* footer
+푸터정보 (숨김 처리) */
