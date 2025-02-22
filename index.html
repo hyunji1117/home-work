@@ -100,11 +100,12 @@
   </head>
   <body>
     <div class="profile-card">
-      <img
-        src="/src/assets/images/evelyn-profile.jpeg"
-        alt="프로필 이미지"
-        class="profile-image"
-      />
+      <picture>
+        <source srcset="/src/assets/images/evelyn-profile.webp" width="150" height="150" type="image/webp">
+        <source srcset="/src/assets/images/evelyn-profile.avif" type="image/avif">
+        <img src="/src/assets/images/evelyn-profile.jpeg" alt="비버 이미지">
+      </picture>
+      
       <h1 class="name">김현지😃</h1>
       <h2 class="lioncamp-13">Likelion-Bootcamp 13기</h2>
       <p class="about-me">안녕하세요! UX 탐험가 김현지 입니다.</p>
@@ -122,7 +123,7 @@
           </li>
           <li>
             <a 
-              href="http://localhost:8090/src/avatars/avatars.html" 
+              href="/src/avatars/avatars.html" 
               title="아바타 과제를 보려면 클릭하세요." 
               target="_blank"
               rel="noopener window.opener noreferrer">
