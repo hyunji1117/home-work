@@ -50,7 +50,7 @@ a:not([class]) {
 img,
 picture {
   max-width: 100%;
-  /* display: block; */
+  display: block;
 }
 
 /* iframe, video 요소의 기본 스타일 */
