@@ -26,8 +26,8 @@
       }
 
       .profile-image {
-        width: 150px;
-        height: 150px;
+        /* width: 150px;
+        height: 150px; */
         border-radius: 50%;
         margin-bottom: 1.5rem;
         object-fit: cover;
@@ -105,8 +105,17 @@
         <source srcset="/src/assets/images/evelyn-profile.avif" type="image/avif">
         <img src="/src/assets/images/evelyn-profile.jpeg" alt="비버 이미지">
       </picture> -->
-      <img src="/src/assets/images/evelyn-profile.webp" alt="비버 이미지" />
+      <!-- <img src="/src/assets/images/evelyn-profile.webp" alt="비버 이미지" /> -->
       
+      <figure>
+        <img 
+          src="/src/assets/images/evelyn-profile.jpeg" 
+          alt="비버 이미지"
+          width="150"
+        height="150"
+        /> <!-- lazy loading은 변두리 이미지만 적용할 것 -->
+        <figcaption>비버 이미지</figcaption>
+      </figure>
       <h1 class="name">김현지😃</h1>
       <h2 class="lioncamp-13">Likelion-Bootcamp 13기</h2>
       <p class="about-me">안녕하세요! UX 탐험가 김현지 입니다.</p>
