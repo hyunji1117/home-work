@@ -1,5 +1,11 @@
 @import "/src/common/modern-reset.css";
 
+:root {
+  /* 색상 팔레트 */
+  --beige: #DBDBDB;
+  --light-green: #4BFE88;
+}
+
 /* common */
 .ally-hidden {
   position: absolute !important;
@@ -17,7 +23,7 @@
 /* header 
 아바타 별 상태 정보 (숨김 처리) */
 
-/* main */
+/* main */😵‍💫
 .avatars-wrap {
   padding: 100px;
 }
