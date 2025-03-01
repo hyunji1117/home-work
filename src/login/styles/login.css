@@ -1,1 +1,215 @@
-/* CSS를 활용하여 레이아웃 및 스타일링을 완성해주세요 */
+@import '/src/common/normalize.css';
+@import '/src/common/theme.css';
+@import '/src/common/a11y.css';
+@import '/src/login/component/searchbar-component.html';
+
+:root {
+  /* 색상 팔레트 */
+  --primary: #03CF5D;
+  --warning: #FF1414;
+  --white: #FFF;
+  --gray-10: #DADADA;
+  --gray-20: #999;
+  --gray-30: #666;
+  --black: #333;
+  --black-alpha: #000 .1;
+
+  /* 주요 색상 */
+  --input-text-color: var(--gray-20);
+  --input-password-color: var(--black);
+  --input-required-text-color: var(--warning);
+  --login-button-active-color: var(--primary);
+  --login-button-inactive-color: var(--gray-10);
+
+  /* 사이즈 */
+  --mobile-width: 20rem;
+  --font-size: 1rem;
+  --space-small: .625rem;
+  --input-space: .875rem;
+  --input-space-bottom: .8125rem;
+
+  /* 각도 */
+}
+
+body *,
+body *:before,
+body *:after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 640px;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  line-height: 0;
+  font-size: clamp(.75rem, 2vw, 2rem);
+  align-items: center;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 50rem;
+  }
+
+
+}
+
+button {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 10px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  /* width: calc(100% / 5);
+  min-height: 20rem; */
+  /* position: absolute;
+  inset-inline-start: 50%;
+  inset-block-start: 50%;
+  transform: translate(-50%, -50%); */
+  /* gap: 45px; */
+
+  @media (min-width: 768px) {
+    /* margin-block-start: 20px;
+display: flex;
+flex-flow: column nowrap;
+gap: 45px;
+border: 1px solid #03cc5c;
+padding: 70px 15px 111px 15px;
+
+width: 614px;
+height: 480px;
+flex-direction: column;
+align-items: center; */
+  }
+}
+
+.brand {
+  margin: 4.375rem 0 2.8125rem;
+  width: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* fieldset */
+.login-form {
+  border: 0;
+  gap: 0.75rem;
+
+  .input {
+    width: 100%;
+    margin: 0 0 15px;
+
+    /* block-size: 1.5rem;
+    border: 1px solid var(--pastel-gray);
+    font-size: 0.875rem;
+    padding: 0.125rem 0.5rem;
+    flex: 1 0 0; */
+
+    input {
+      width: 100%;
+      block-size: 3rem;
+      border: 1px solid var(--gray-10);
+      padding: var(--input-space) var(--input-space) var(--input-space-bottom);
+      display: flex;
+      font-size: var(--font-size);
+
+      &:focus {
+        outline: 1px solid var(--primary);
+      }
+    }
+  }
+}
+
+.error_message {
+  display: none;
+  color: red;
+  text-align: left;
+}
+
+.login-form-wrapper {
+  width: 100%;
+  margin-block-end: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 45px;
+  /* padding: 70px 15px 111px 15px; */
+
+  .personal-login-form {
+    margin-block-start: 20px;
+    flex: 1 0 0;
+  }
+
+}
+
+.button-login {
+  width: 100%;
+  height: 3rem;
+  margin-top: var(--space-small);
+  background: var(--login-button-active-color);
+  border: 0;
+  color: var(--white);
+  font-size: var(--font-size);
+}
+
+/* 로그인 상태 유지 */
+.checkbox-container {
+  font-size: var(--font-size);
+
+  &+.checkbox-container {
+    margin-top: 0.7em;
+  }
+}
+
+.screen-reader {
+  /* 스크린 리더를 고려해서 체크박스를 화면에서 숨김 */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  margin: -1px;
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+}
+
+.label-box {
+  position: relative;
+  top: 0.625rem;
+  left: 0.3125rem;
+}
+
+.check-icon {
+  width: 1.4em;
+  height: 1.4em;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid var(--gray-20);
+  position: absolute;
+  left: -30%;
+  top: 30%;
+  transform: translateY(-50%);
+
+  &::before {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    width: 30%;
+    height: 55%;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-70%) rotateZ(40deg);
+    border-right: 1.7px solid gray;
+    border-bottom: 1.7px solid gray;
+  }
+}
