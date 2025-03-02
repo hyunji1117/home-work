@@ -1,7 +1,7 @@
-@import '/src/common/normalize.css';
-@import '/src/common/theme.css';
-@import '/src/common/a11y.css';
-@import '/src/login/component/searchbar-component.html';
+@import '../common/normalize.css';
+@import '../common/theme.css';
+@import '../common/a11y.css';
+@import '../components/searchbar-component.html';
 
 :root {
   /* 색상 팔레트 */
